@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Demo</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="elements.css">
+    <link rel="stylesheet" type="text/css" href="demo.css">
+</head>
+<body>
+    <!-- Customize the demo for your component -->
+    <header class="header">
+        <h1>Bookmark Component Demo</h1>
+        <div id="bookmark-container"></div>
+    </header>
+
+    <div id="demo-target" style="position:relative;"></div>
+    <div class="paging" class="">
+        <div id="prevPageId">
+            <button class="page-controls" onclick="demoObject.onPrev();">Previous
+                <!--<i class="pe-icon--chevron-left" aria-hidden="true"></i>-->
+                <!--<span class="reader-only">Previous page</span>-->
+            </button>
+        </div>
+        <div id="nextPageId">
+            <button class="page-controls" onclick="demoObject.onNext()" >Next
+                <!--<i class="pe-icon--chevron-right" aria-hidden="true"></i>-->
+                <!--<span class="reader-only">Next page</span>-->
+            </button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://pxe-sdk-qa.stg-openclass.com/readersdk/latest/pxereader.js"></script>
+    <!-- External dependencies for React -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react-dom.js"></script>
+    <!-- CustomEvent polyfill is for IE, Intl.js polyfill is for Safari -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.js?features=CustomEvent,Intl.~locale.en,Intl.~locale.fr"></script>
+    <!-- Locally hosted demo server -->
+    <!--<script src="http://localhost:8081/webpack-dev-server.js"></script>-->
+    <!-- Demo build of component -->
+    <script src="../build/dev.bookmarkComponent.js"></script>
+    <script src="demo.js"></script>
+</body>
+</html>

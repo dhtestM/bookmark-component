@@ -1,0 +1,22 @@
+#o-bookmark-overlay-icon {
+  line-height: 28px;
+  margin-top: 0;
+  cursor: pointer;
+  background: transparent;
+  padding: 0 7px;
+  text-shadow: none;
+  color: #fff;
+  outline: none;
+  border: 1px solid transparent; }
+  #o-bookmark-overlay-icon:hover {
+    color: #999; }
+  #o-bookmark-overlay-icon:focus {
+    color: #999;
+    border: 1px dotted #999;
+    border-radius: 0; }
+  #o-bookmark-overlay-icon i {
+    font-size: 22px;
+    margin-top: 6px;
+    background-image: url(./images/Bookmark@3x.png) 0 0; }
+
+/*# sourceMappingURL=bookmark-component.css.map */
